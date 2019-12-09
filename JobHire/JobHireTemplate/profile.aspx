@@ -164,7 +164,7 @@
 
 						<!-- Headline -->
 						<div class="headline">
-							<h3><i class="icon-material-outline-account-circle"></i> Mi Cuente</h3>
+							<h3><i class="icon-material-outline-account-circle"></i> Mi Cuenta</h3>
 						</div>
 
 						<div class="content with-padding padding-bottom-0">
@@ -185,14 +185,28 @@
 										<div class="col-xl-6">
 											<div class="submit-field">
 												<h5>Primer Nombre</h5>
-												<input type="text" class="with-border" value="Tom">
+												<input type="text" class="with-border" value="">
 											</div>
 										</div>
 
 										<div class="col-xl-6">
 											<div class="submit-field">
 												<h5>Apellido</h5>
-												<input type="text" class="with-border" value="Smith">
+												<input type="text" class="with-border" value="">
+											</div>
+										</div>
+
+                                        <div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Primer Nombre</h5>
+												<input type="text" class="with-border" value="">
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Apellido</h5>
+												<input type="text" class="with-border" value="">
 											</div>
 										</div>
 

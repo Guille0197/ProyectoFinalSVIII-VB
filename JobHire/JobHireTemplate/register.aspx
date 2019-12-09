@@ -117,6 +117,12 @@
                         <asp:TextBox ID="repeatPass" runat="server" class="input-text with-border" type="password" placeholder="Repetir Contraseña"></asp:TextBox> 
 					</div>
 
+                    <span>Ingrese su fecha de nacimiento (Mayores de +18 )</span>
+                    <div class="input-with-icon-left">
+						<i class="icon-material-outline-date-range"></i>
+                        <asp:TextBox   ID="fechanacimiento" runat="server" class="input-text with-border" type="date" ></asp:TextBox> 
+					</div>
+
 					<a href="#" class="forgot-password">¿Se te olvidó tu contraseña?</a>
 								
 				<!-- Button -->
@@ -303,8 +309,16 @@
 
     <!-- Google API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g&libraries=places&callback=initAutocomplete"></script>
-
-    </form>
+        </form>
+    <script type="text/javascript">
+        $('#datepicker').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#datepicker').datepicker("setDate", new Date());
+</script>
 
 </body>
 </html>
