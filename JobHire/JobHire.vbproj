@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4AA2FCD8-09AE-401A-A5B2-1AB7826AB6F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JobHire</RootNamespace>
+    <AssemblyName>JobHire</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44389</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JobHire.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JobHire.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JobHireTemplate\allJobs.aspx" />
+    <Content Include="JobHireTemplate\css\bootstrap-grid.css" />
+    <Content Include="JobHireTemplate\css\colors\blue.css" />
+    <Content Include="JobHireTemplate\css\colors\green.css" />
+    <Content Include="JobHireTemplate\css\colors\orange.css" />
+    <Content Include="JobHireTemplate\css\colors\purple.css" />
+    <Content Include="JobHireTemplate\css\colors\red.css" />
+    <Content Include="JobHireTemplate\css\colors\yellow.css" />
+    <Content Include="JobHireTemplate\css\icons.css" />
+    <Content Include="JobHireTemplate\css\invoice.css" />
+    <Content Include="JobHireTemplate\css\style.css" />
+    <Content Include="JobHireTemplate\fonts\Brand-Icons.svg" />
+    <Content Include="JobHireTemplate\fonts\Feather-Icons.svg" />
+    <Content Include="JobHireTemplate\fonts\Line-Awesome.svg" />
+    <Content Include="JobHireTemplate\fonts\Material-Icons.svg" />
+    <Content Include="JobHireTemplate\images\blog-01a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-02a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-03a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-04.jpg" />
+    <Content Include="JobHireTemplate\images\blog-04a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-05a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-06a.jpg" />
+    <Content Include="JobHireTemplate\images\blog-07a.jpg" />
+    <Content Include="JobHireTemplate\images\browse-companies-02.png" />
+    <Content Include="JobHireTemplate\images\browse-companies-03.png" />
+    <Content Include="JobHireTemplate\images\browse-companies-04.png" />
+    <Content Include="JobHireTemplate\images\company-logo-01.png" />
+    <Content Include="JobHireTemplate\images\company-logo-02.png" />
+    <Content Include="JobHireTemplate\images\company-logo-03.png" />
+    <Content Include="JobHireTemplate\images\company-logo-03a.png" />
+    <Content Include="JobHireTemplate\images\company-logo-04.png" />
+    <Content Include="JobHireTemplate\images\company-logo-05.png" />
+    <Content Include="JobHireTemplate\images\company-logo-06.png" />
+    <Content Include="JobHireTemplate\images\company-logo-placeholder-alt.png" />
+    <Content Include="JobHireTemplate\images\company-logo-placeholder.png" />
+    <Content Include="JobHireTemplate\images\featured-city-01.jpg" />
+    <Content Include="JobHireTemplate\images\featured-city-02.jpg" />
+    <Content Include="JobHireTemplate\images\featured-city-03.jpg" />
+    <Content Include="JobHireTemplate\images\featured-city-04.jpg" />
+    <Content Include="JobHireTemplate\images\flags\ad.svg" />
+    <Content Include="JobHireTemplate\images\flags\ae.svg" />
+    <Content Include="JobHireTemplate\images\flags\af.svg" />
+    <Content Include="JobHireTemplate\images\flags\ag.svg" />
+    <Content Include="JobHireTemplate\images\flags\ai.svg" />
+    <Content Include="JobHireTemplate\images\flags\al.svg" />
+    <Content Include="JobHireTemplate\images\flags\am.svg" />
+    <Content Include="JobHireTemplate\images\flags\ao.svg" />
+    <Content Include="JobHireTemplate\images\flags\aq.svg" />
+    <Content Include="JobHireTemplate\images\flags\ar.svg" />
+    <Content Include="JobHireTemplate\images\flags\as.svg" />
+    <Content Include="JobHireTemplate\images\flags\at.svg" />
+    <Content Include="JobHireTemplate\images\flags\au.svg" />
+    <Content Include="JobHireTemplate\images\flags\aw.svg" />
+    <Content Include="JobHireTemplate\images\flags\ax.svg" />
+    <Content Include="JobHireTemplate\images\flags\az.svg" />
+    <Content Include="JobHireTemplate\images\flags\ba.svg" />
+    <Content Include="JobHireTemplate\images\flags\bb.svg" />
+    <Content Include="JobHireTemplate\images\flags\bd.svg" />
+    <Content Include="JobHireTemplate\images\flags\be.svg" />
+    <Content Include="JobHireTemplate\images\flags\bf.svg" />
+    <Content Include="JobHireTemplate\images\flags\bg.svg" />
+    <Content Include="JobHireTemplate\images\flags\bh.svg" />
+    <Content Include="JobHireTemplate\images\flags\bi.svg" />
+    <Content Include="JobHireTemplate\images\flags\bj.svg" />
+    <Content Include="JobHireTemplate\images\flags\bl.svg" />
+    <Content Include="JobHireTemplate\images\flags\bm.svg" />
+    <Content Include="JobHireTemplate\images\flags\bn.svg" />
+    <Content Include="JobHireTemplate\images\flags\bo.svg" />
+    <Content Include="JobHireTemplate\images\flags\bq.svg" />
+    <Content Include="JobHireTemplate\images\flags\br.svg" />
+    <Content Include="JobHireTemplate\images\flags\bs.svg" />
+    <Content Include="JobHireTemplate\images\flags\bt.svg" />
+    <Content Include="JobHireTemplate\images\flags\bv.svg" />
+    <Content Include="JobHireTemplate\images\flags\bw.svg" />
+    <Content Include="JobHireTemplate\images\flags\by.svg" />
+    <Content Include="JobHireTemplate\images\flags\bz.svg" />
+    <Content Include="JobHireTemplate\images\flags\ca.svg" />
+    <Content Include="JobHireTemplate\images\flags\cc.svg" />
+    <Content Include="JobHireTemplate\images\flags\cd.svg" />
+    <Content Include="JobHireTemplate\images\flags\cf.svg" />
+    <Content Include="JobHireTemplate\images\flags\cg.svg" />
+    <Content Include="JobHireTemplate\images\flags\ch.svg" />
+    <Content Include="JobHireTemplate\images\flags\ci.svg" />
+    <Content Include="JobHireTemplate\images\flags\ck.svg" />
+    <Content Include="JobHireTemplate\images\flags\cl.svg" />
+    <Content Include="JobHireTemplate\images\flags\cm.svg" />
+    <Content Include="JobHireTemplate\images\flags\cn.svg" />
+    <Content Include="JobHireTemplate\images\flags\co.svg" />
+    <Content Include="JobHireTemplate\images\flags\cr.svg" />
+    <Content Include="JobHireTemplate\images\flags\cu.svg" />
+    <Content Include="JobHireTemplate\images\flags\cv.svg" />
+    <Content Include="JobHireTemplate\images\flags\cw.svg" />
+    <Content Include="JobHireTemplate\images\flags\cx.svg" />
+    <Content Include="JobHireTemplate\images\flags\cy.svg" />
+    <Content Include="JobHireTemplate\images\flags\cz.svg" />
+    <Content Include="JobHireTemplate\images\flags\de.svg" />
+    <Content Include="JobHireTemplate\images\flags\dj.svg" />
+    <Content Include="JobHireTemplate\images\flags\dk.svg" />
+    <Content Include="JobHireTemplate\images\flags\dm.svg" />
+    <Content Include="JobHireTemplate\images\flags\do.svg" />
+    <Content Include="JobHireTemplate\images\flags\dz.svg" />
+    <Content Include="JobHireTemplate\images\flags\ec.svg" />
+    <Content Include="JobHireTemplate\images\flags\ee.svg" />
+    <Content Include="JobHireTemplate\images\flags\eg.svg" />
+    <Content Include="JobHireTemplate\images\flags\eh.svg" />
+    <Content Include="JobHireTemplate\images\flags\er.svg" />
+    <Content Include="JobHireTemplate\images\flags\es-ct.svg" />
+    <Content Include="JobHireTemplate\images\flags\es.svg" />
+    <Content Include="JobHireTemplate\images\flags\et.svg" />
+    <Content Include="JobHireTemplate\images\flags\eu.svg" />
+    <Content Include="JobHireTemplate\images\flags\fi.svg" />
+    <Content Include="JobHireTemplate\images\flags\fj.svg" />
+    <Content Include="JobHireTemplate\images\flags\fk.svg" />
+    <Content Include="JobHireTemplate\images\flags\fm.svg" />
+    <Content Include="JobHireTemplate\images\flags\fo.svg" />
+    <Content Include="JobHireTemplate\images\flags\fr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ga.svg" />
+    <Content Include="JobHireTemplate\images\flags\gb-eng.svg" />
+    <Content Include="JobHireTemplate\images\flags\gb-nir.svg" />
+    <Content Include="JobHireTemplate\images\flags\gb-sct.svg" />
+    <Content Include="JobHireTemplate\images\flags\gb-wls.svg" />
+    <Content Include="JobHireTemplate\images\flags\gb.svg" />
+    <Content Include="JobHireTemplate\images\flags\gd.svg" />
+    <Content Include="JobHireTemplate\images\flags\ge.svg" />
+    <Content Include="JobHireTemplate\images\flags\gf.svg" />
+    <Content Include="JobHireTemplate\images\flags\gg.svg" />
+    <Content Include="JobHireTemplate\images\flags\gh.svg" />
+    <Content Include="JobHireTemplate\images\flags\gi.svg" />
+    <Content Include="JobHireTemplate\images\flags\gl.svg" />
+    <Content Include="JobHireTemplate\images\flags\gm.svg" />
+    <Content Include="JobHireTemplate\images\flags\gn.svg" />
+    <Content Include="JobHireTemplate\images\flags\gp.svg" />
+    <Content Include="JobHireTemplate\images\flags\gq.svg" />
+    <Content Include="JobHireTemplate\images\flags\gr.svg" />
+    <Content Include="JobHireTemplate\images\flags\gs.svg" />
+    <Content Include="JobHireTemplate\images\flags\gt.svg" />
+    <Content Include="JobHireTemplate\images\flags\gu.svg" />
+    <Content Include="JobHireTemplate\images\flags\gw.svg" />
+    <Content Include="JobHireTemplate\images\flags\gy.svg" />
+    <Content Include="JobHireTemplate\images\flags\hk.svg" />
+    <Content Include="JobHireTemplate\images\flags\hm.svg" />
+    <Content Include="JobHireTemplate\images\flags\hn.svg" />
+    <Content Include="JobHireTemplate\images\flags\hr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ht.svg" />
+    <Content Include="JobHireTemplate\images\flags\hu.svg" />
+    <Content Include="JobHireTemplate\images\flags\id.svg" />
+    <Content Include="JobHireTemplate\images\flags\ie.svg" />
+    <Content Include="JobHireTemplate\images\flags\il.svg" />
+    <Content Include="JobHireTemplate\images\flags\im.svg" />
+    <Content Include="JobHireTemplate\images\flags\in.svg" />
+    <Content Include="JobHireTemplate\images\flags\io.svg" />
+    <Content Include="JobHireTemplate\images\flags\iq.svg" />
+    <Content Include="JobHireTemplate\images\flags\ir.svg" />
+    <Content Include="JobHireTemplate\images\flags\is.svg" />
+    <Content Include="JobHireTemplate\images\flags\it.svg" />
+    <Content Include="JobHireTemplate\images\flags\je.svg" />
+    <Content Include="JobHireTemplate\images\flags\jm.svg" />
+    <Content Include="JobHireTemplate\images\flags\jo.svg" />
+    <Content Include="JobHireTemplate\images\flags\jp.svg" />
+    <Content Include="JobHireTemplate\images\flags\ke.svg" />
+    <Content Include="JobHireTemplate\images\flags\kg.svg" />
+    <Content Include="JobHireTemplate\images\flags\kh.svg" />
+    <Content Include="JobHireTemplate\images\flags\ki.svg" />
+    <Content Include="JobHireTemplate\images\flags\km.svg" />
+    <Content Include="JobHireTemplate\images\flags\kn.svg" />
+    <Content Include="JobHireTemplate\images\flags\kp.svg" />
+    <Content Include="JobHireTemplate\images\flags\kr.svg" />
+    <Content Include="JobHireTemplate\images\flags\kw.svg" />
+    <Content Include="JobHireTemplate\images\flags\ky.svg" />
+    <Content Include="JobHireTemplate\images\flags\kz.svg" />
+    <Content Include="JobHireTemplate\images\flags\la.svg" />
+    <Content Include="JobHireTemplate\images\flags\lb.svg" />
+    <Content Include="JobHireTemplate\images\flags\lc.svg" />
+    <Content Include="JobHireTemplate\images\flags\li.svg" />
+    <Content Include="JobHireTemplate\images\flags\lk.svg" />
+    <Content Include="JobHireTemplate\images\flags\lr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ls.svg" />
+    <Content Include="JobHireTemplate\images\flags\lt.svg" />
+    <Content Include="JobHireTemplate\images\flags\lu.svg" />
+    <Content Include="JobHireTemplate\images\flags\lv.svg" />
+    <Content Include="JobHireTemplate\images\flags\ly.svg" />
+    <Content Include="JobHireTemplate\images\flags\ma.svg" />
+    <Content Include="JobHireTemplate\images\flags\mc.svg" />
+    <Content Include="JobHireTemplate\images\flags\md.svg" />
+    <Content Include="JobHireTemplate\images\flags\me.svg" />
+    <Content Include="JobHireTemplate\images\flags\mf.svg" />
+    <Content Include="JobHireTemplate\images\flags\mg.svg" />
+    <Content Include="JobHireTemplate\images\flags\mh.svg" />
+    <Content Include="JobHireTemplate\images\flags\mk.svg" />
+    <Content Include="JobHireTemplate\images\flags\ml.svg" />
+    <Content Include="JobHireTemplate\images\flags\mm.svg" />
+    <Content Include="JobHireTemplate\images\flags\mn.svg" />
+    <Content Include="JobHireTemplate\images\flags\mo.svg" />
+    <Content Include="JobHireTemplate\images\flags\mp.svg" />
+    <Content Include="JobHireTemplate\images\flags\mq.svg" />
+    <Content Include="JobHireTemplate\images\flags\mr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ms.svg" />
+    <Content Include="JobHireTemplate\images\flags\mt.svg" />
+    <Content Include="JobHireTemplate\images\flags\mu.svg" />
+    <Content Include="JobHireTemplate\images\flags\mv.svg" />
+    <Content Include="JobHireTemplate\images\flags\mw.svg" />
+    <Content Include="JobHireTemplate\images\flags\mx.svg" />
+    <Content Include="JobHireTemplate\images\flags\my.svg" />
+    <Content Include="JobHireTemplate\images\flags\mz.svg" />
+    <Content Include="JobHireTemplate\images\flags\na.svg" />
+    <Content Include="JobHireTemplate\images\flags\nc.svg" />
+    <Content Include="JobHireTemplate\images\flags\ne.svg" />
+    <Content Include="JobHireTemplate\images\flags\nf.svg" />
+    <Content Include="JobHireTemplate\images\flags\ng.svg" />
+    <Content Include="JobHireTemplate\images\flags\ni.svg" />
+    <Content Include="JobHireTemplate\images\flags\nl.svg" />
+    <Content Include="JobHireTemplate\images\flags\no.svg" />
+    <Content Include="JobHireTemplate\images\flags\np.svg" />
+    <Content Include="JobHireTemplate\images\flags\nr.svg" />
+    <Content Include="JobHireTemplate\images\flags\nu.svg" />
+    <Content Include="JobHireTemplate\images\flags\nz.svg" />
+    <Content Include="JobHireTemplate\images\flags\om.svg" />
+    <Content Include="JobHireTemplate\images\flags\pa.svg" />
+    <Content Include="JobHireTemplate\images\flags\pe.svg" />
+    <Content Include="JobHireTemplate\images\flags\pf.svg" />
+    <Content Include="JobHireTemplate\images\flags\pg.svg" />
+    <Content Include="JobHireTemplate\images\flags\ph.svg" />
+    <Content Include="JobHireTemplate\images\flags\pk.svg" />
+    <Content Include="JobHireTemplate\images\flags\pl.svg" />
+    <Content Include="JobHireTemplate\images\flags\pm.svg" />
+    <Content Include="JobHireTemplate\images\flags\pn.svg" />
+    <Content Include="JobHireTemplate\images\flags\pr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ps.svg" />
+    <Content Include="JobHireTemplate\images\flags\pt.svg" />
+    <Content Include="JobHireTemplate\images\flags\pw.svg" />
+    <Content Include="JobHireTemplate\images\flags\py.svg" />
+    <Content Include="JobHireTemplate\images\flags\qa.svg" />
+    <Content Include="JobHireTemplate\images\flags\re.svg" />
+    <Content Include="JobHireTemplate\images\flags\ro.svg" />
+    <Content Include="JobHireTemplate\images\flags\rs.svg" />
+    <Content Include="JobHireTemplate\images\flags\ru.svg" />
+    <Content Include="JobHireTemplate\images\flags\rw.svg" />
+    <Content Include="JobHireTemplate\images\flags\sa.svg" />
+    <Content Include="JobHireTemplate\images\flags\sb.svg" />
+    <Content Include="JobHireTemplate\images\flags\sc.svg" />
+    <Content Include="JobHireTemplate\images\flags\sd.svg" />
+    <Content Include="JobHireTemplate\images\flags\se.svg" />
+    <Content Include="JobHireTemplate\images\flags\sg.svg" />
+    <Content Include="JobHireTemplate\images\flags\sh.svg" />
+    <Content Include="JobHireTemplate\images\flags\si.svg" />
+    <Content Include="JobHireTemplate\images\flags\sj.svg" />
+    <Content Include="JobHireTemplate\images\flags\sk.svg" />
+    <Content Include="JobHireTemplate\images\flags\sl.svg" />
+    <Content Include="JobHireTemplate\images\flags\sm.svg" />
+    <Content Include="JobHireTemplate\images\flags\sn.svg" />
+    <Content Include="JobHireTemplate\images\flags\so.svg" />
+    <Content Include="JobHireTemplate\images\flags\sr.svg" />
+    <Content Include="JobHireTemplate\images\flags\ss.svg" />
+    <Content Include="JobHireTemplate\images\flags\st.svg" />
+    <Content Include="JobHireTemplate\images\flags\sv.svg" />
+    <Content Include="JobHireTemplate\images\flags\sx.svg" />
+    <Content Include="JobHireTemplate\images\flags\sy.svg" />
+    <Content Include="JobHireTemplate\images\flags\sz.svg" />
+    <Content Include="JobHireTemplate\images\flags\tc.svg" />
+    <Content Include="JobHireTemplate\images\flags\td.svg" />
+    <Content Include="JobHireTemplate\images\flags\tf.svg" />
+    <Content Include="JobHireTemplate\images\flags\tg.svg" />
+    <Content Include="JobHireTemplate\images\flags\th.svg" />
+    <Content Include="JobHireTemplate\images\flags\tj.svg" />
+    <Content Include="JobHireTemplate\images\flags\tk.svg" />
+    <Content Include="JobHireTemplate\images\flags\tl.svg" />
+    <Content Include="JobHireTemplate\images\flags\tm.svg" />
+    <Content Include="JobHireTemplate\images\flags\tn.svg" />
+    <Content Include="JobHireTemplate\images\flags\to.svg" />
+    <Content Include="JobHireTemplate\images\flags\tr.svg" />
+    <Content Include="JobHireTemplate\images\flags\tt.svg" />
+    <Content Include="JobHireTemplate\images\flags\tv.svg" />
+    <Content Include="JobHireTemplate\images\flags\tw.svg" />
+    <Content Include="JobHireTemplate\images\flags\tz.svg" />
+    <Content Include="JobHireTemplate\images\flags\ua.svg" />
+    <Content Include="JobHireTemplate\images\flags\ug.svg" />
+    <Content Include="JobHireTemplate\images\flags\um.svg" />
+    <Content Include="JobHireTemplate\images\flags\un.svg" />
+    <Content Include="JobHireTemplate\images\flags\us.svg" />
+    <Content Include="JobHireTemplate\images\flags\uy.svg" />
+    <Content Include="JobHireTemplate\images\flags\uz.svg" />
+    <Content Include="JobHireTemplate\images\flags\va.svg" />
+    <Content Include="JobHireTemplate\images\flags\vc.svg" />
+    <Content Include="JobHireTemplate\images\flags\ve.svg" />
+    <Content Include="JobHireTemplate\images\flags\vg.svg" />
+    <Content Include="JobHireTemplate\images\flags\vi.svg" />
+    <Content Include="JobHireTemplate\images\flags\vn.svg" />
+    <Content Include="JobHireTemplate\images\flags\vu.svg" />
+    <Content Include="JobHireTemplate\images\flags\wf.svg" />
+    <Content Include="JobHireTemplate\images\flags\ws.svg" />
+    <Content Include="JobHireTemplate\images\flags\ye.svg" />
+    <Content Include="JobHireTemplate\images\flags\yt.svg" />
+    <Content Include="JobHireTemplate\images\flags\za.svg" />
+    <Content Include="JobHireTemplate\images\flags\zm.svg" />
+    <Content Include="JobHireTemplate\images\flags\zw.svg" />
+    <Content Include="JobHireTemplate\images\home-background-02.jpg" />
+    <Content Include="JobHireTemplate\images\home-background.jpg" />
+    <Content Include="JobHireTemplate\images\home-video-background-poster.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-01.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-02.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-03.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-04.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-05.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-06.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-07.jpg" />
+    <Content Include="JobHireTemplate\images\job-category-08.jpg" />
+    <Content Include="JobHireTemplate\images\logo-carousel-01.png" />
+    <Content Include="JobHireTemplate\images\logo-carousel-02.png" />
+    <Content Include="JobHireTemplate\images\logo-carousel-03.png" />
+    <Content Include="JobHireTemplate\images\logo-carousel-04.png" />
+    <Content Include="JobHireTemplate\images\logo-carousel-05.png" />
+    <Content Include="JobHireTemplate\images\logo-carousel-06.png" />
+    <Content Include="JobHireTemplate\images\logo.png" />
+    <Content Include="JobHireTemplate\images\logo2.png" />
+    <Content Include="JobHireTemplate\images\section-background.jpg" />
+    <Content Include="JobHireTemplate\images\single-company.jpg" />
+    <Content Include="JobHireTemplate\images\single-freelancer.jpg" />
+    <Content Include="JobHireTemplate\images\single-job.jpg" />
+    <Content Include="JobHireTemplate\images\single-task.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-01.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-02.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-03.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-04.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-05.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-06.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-placeholder.png" />
+    <Content Include="JobHireTemplate\images\user-avatar-small-01.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-small-02.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-small-03.jpg" />
+    <Content Include="JobHireTemplate\index.aspx" />
+    <Content Include="JobHireTemplate\index.html" />
+    <Content Include="JobHireTemplate\js\bootstrap-select.min.js" />
+    <Content Include="JobHireTemplate\js\bootstrap-slider.min.js" />
+    <Content Include="JobHireTemplate\js\chart.min.js" />
+    <Content Include="JobHireTemplate\js\clipboard.min.js" />
+    <Content Include="JobHireTemplate\js\counterup.min.js" />
+    <Content Include="JobHireTemplate\js\custom.js" />
+    <Content Include="JobHireTemplate\js\infobox.min.js" />
+    <Content Include="JobHireTemplate\js\jquery-3.3.1.min.js" />
+    <Content Include="JobHireTemplate\js\jquery-migrate-3.0.0.min.js" />
+    <Content Include="JobHireTemplate\js\magnific-popup.min.js" />
+    <Content Include="JobHireTemplate\js\maps.js" />
+    <Content Include="JobHireTemplate\js\markerclusterer.js" />
+    <Content Include="JobHireTemplate\js\mmenu.min.js" />
+    <Content Include="JobHireTemplate\js\simplebar.min.js" />
+    <Content Include="JobHireTemplate\js\slick.min.js" />
+    <Content Include="JobHireTemplate\js\snackbar.js" />
+    <Content Include="JobHireTemplate\js\tippy.all.min.js" />
+    <Content Include="JobHireTemplate\login.aspx" />
+    <Content Include="JobHireTemplate\profile.aspx" />
+    <Content Include="JobHireTemplate\register.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JobHireTemplate\allJobs.aspx.designer.vb">
+      <DependentUpon>allJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\allJobs.aspx.vb">
+      <DependentUpon>allJobs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\profile.aspx.designer.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\profile.aspx.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JobHireTemplate\css\desktop.ini" />
+    <Content Include="JobHireTemplate\fonts\Brand-Icons.ttf" />
+    <Content Include="JobHireTemplate\fonts\Brand-Icons.woff" />
+    <Content Include="JobHireTemplate\fonts\Feather-Icons.ttf" />
+    <Content Include="JobHireTemplate\fonts\Feather-Icons.woff" />
+    <Content Include="JobHireTemplate\fonts\Line-Awesome.ttf" />
+    <Content Include="JobHireTemplate\fonts\Line-Awesome.woff" />
+    <Content Include="JobHireTemplate\fonts\Material-Icons.ttf" />
+    <Content Include="JobHireTemplate\fonts\Material-Icons.woff" />
+    <Content Include="JobHireTemplate\images\flags\LICENSE" />
+    <Content Include="JobHireTemplate\sass\dashboard\_dashboard-basics.scss" />
+    <Content Include="JobHireTemplate\sass\dashboard\_dashboard-gui-elements.scss" />
+    <Content Include="JobHireTemplate\sass\dashboard\_dashboard-messages.scss" />
+    <Content Include="JobHireTemplate\sass\dashboard\_dashboard-navigation.scss" />
+    <Content Include="JobHireTemplate\sass\desktop.ini" />
+    <Content Include="JobHireTemplate\sass\gui\_accordion.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_back-to-top.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_bidding-widget.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_boxed-list.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_buttons.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_category-boxes.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_checkbox.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_clickable-tags.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_copy-to-clipboard.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_countdown.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_counters.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_custom-upload-button.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_icon-boxes.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_intro-banner.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_leave-rating-stars.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_lists.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_marks.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_notification-boxes.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_notify-box.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_on-off-switch.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_pagination.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_photo-box.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_photo-section.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_pricing-plans.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_radio-button.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_ripple-effect.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_share-buttons.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_star-rating.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_tables.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_tabs.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_testimonials.scss" />
+    <Content Include="JobHireTemplate\sass\gui\_verified-badge.scss" />
+    <Content Include="JobHireTemplate\sass\icons\_brand-icons.scss" />
+    <Content Include="JobHireTemplate\sass\icons\_feather-icons.scss" />
+    <Content Include="JobHireTemplate\sass\icons\_line-awesome-icons.scss" />
+    <Content Include="JobHireTemplate\sass\icons\_material-icons.scss" />
+    <Content Include="JobHireTemplate\sass\invoice.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_404-page.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_blog.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_bootstrap-grid.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_checkout-page.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_common-typography.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_contact-page.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_footer.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_form-styles.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_header-notifications.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_header.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_mobile-navigation.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_navigation.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_offsets.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_sidebar-styles.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_single-freelancer-page.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_single-job-page.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_titlebar.scss" />
+    <Content Include="JobHireTemplate\sass\layout\_user-menu.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_companies-list.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_freelancers-grid-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_freelancers-list-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_full-page-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_jobs-compact-list-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_jobs-grid-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_jobs-list-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_tasks-grid-layout.scss" />
+    <Content Include="JobHireTemplate\sass\listings\_tasks-list-layout.scss" />
+    <Content Include="JobHireTemplate\sass\style.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_bootstrap-range-slider.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_bootstrap-select.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_custom-scrollbar.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_google-autocomplete.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_maps.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_popups.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_slick-carousel.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_snackbar.scss" />
+    <Content Include="JobHireTemplate\sass\vendor\_tooltips.scss" />
+    <Content Include="JobHireTemplate\sass\_custom.scss" />
+    <Content Include="JobHireTemplate\sass\_variables.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JobHireTemplate\images\img new\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61457</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44389/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
