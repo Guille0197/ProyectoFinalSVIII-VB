@@ -443,6 +443,7 @@
     <Content Include="JobHireTemplate\login.aspx" />
     <Content Include="JobHireTemplate\profile.aspx" />
     <Content Include="JobHireTemplate\register.aspx" />
+    <Content Include="JobHireTemplate\trabajo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -479,6 +480,13 @@
     </Compile>
     <Compile Include="JobHireTemplate\register.aspx.vb">
       <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo.aspx.designer.vb">
+      <DependentUpon>trabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo.aspx.vb">
+      <DependentUpon>trabajo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Module1.vb" />

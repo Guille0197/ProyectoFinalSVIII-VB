@@ -37,7 +37,7 @@
 
                         <!-- Logo -->
                         <div id="logo">
-                            <a href="html/index.html"><img src="images/logo.png" alt=""></a>
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
                         </div>
 
                         <!-- Main Navigation -->
