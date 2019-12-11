@@ -119,12 +119,16 @@
     <Content Include="JobHireTemplate\images\browse-companies-03.png" />
     <Content Include="JobHireTemplate\images\browse-companies-04.png" />
     <Content Include="JobHireTemplate\images\company-logo-01.png" />
+    <Content Include="JobHireTemplate\images\company-logo-010.jpeg" />
     <Content Include="JobHireTemplate\images\company-logo-02.png" />
     <Content Include="JobHireTemplate\images\company-logo-03.png" />
     <Content Include="JobHireTemplate\images\company-logo-03a.png" />
     <Content Include="JobHireTemplate\images\company-logo-04.png" />
     <Content Include="JobHireTemplate\images\company-logo-05.png" />
     <Content Include="JobHireTemplate\images\company-logo-06.png" />
+    <Content Include="JobHireTemplate\images\company-logo-07.png" />
+    <Content Include="JobHireTemplate\images\company-logo-08.jpeg" />
+    <Content Include="JobHireTemplate\images\company-logo-09.jpeg" />
     <Content Include="JobHireTemplate\images\company-logo-placeholder-alt.png" />
     <Content Include="JobHireTemplate\images\company-logo-placeholder.png" />
     <Content Include="JobHireTemplate\images\featured-city-01.jpg" />
@@ -410,6 +414,7 @@
     <Content Include="JobHireTemplate\images\single-company.jpg" />
     <Content Include="JobHireTemplate\images\single-freelancer.jpg" />
     <Content Include="JobHireTemplate\images\single-job.jpg" />
+    <Content Include="JobHireTemplate\images\single-job.PNG" />
     <Content Include="JobHireTemplate\images\single-task.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-big-01.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-big-02.jpg" />
@@ -417,6 +422,7 @@
     <Content Include="JobHireTemplate\images\user-avatar-big-04.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-big-05.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-big-06.jpg" />
+    <Content Include="JobHireTemplate\images\user-avatar-big-08.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-placeholder.png" />
     <Content Include="JobHireTemplate\images\user-avatar-small-01.jpg" />
     <Content Include="JobHireTemplate\images\user-avatar-small-02.jpg" />
@@ -444,6 +450,15 @@
     <Content Include="JobHireTemplate\profile.aspx" />
     <Content Include="JobHireTemplate\register.aspx" />
     <Content Include="JobHireTemplate\trabajo.aspx" />
+    <Content Include="JobHireTemplate\trabajo10.aspx" />
+    <Content Include="JobHireTemplate\Trabajo2.aspx" />
+    <Content Include="JobHireTemplate\trabajo3.aspx" />
+    <Content Include="JobHireTemplate\trabajo4.aspx" />
+    <Content Include="JobHireTemplate\trabajo5.aspx" />
+    <Content Include="JobHireTemplate\trabajo6.aspx" />
+    <Content Include="JobHireTemplate\trabajo7.aspx" />
+    <Content Include="JobHireTemplate\trabajo8.aspx" />
+    <Content Include="JobHireTemplate\trabajo9.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -452,42 +467,105 @@
     </Compile>
     <Compile Include="JobHireTemplate\allJobs.aspx.vb">
       <DependentUpon>allJobs.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobHireTemplate\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobHireTemplate\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobHireTemplate\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobHireTemplate\login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobHireTemplate\profile.aspx.designer.vb">
       <DependentUpon>profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobHireTemplate\profile.aspx.vb">
       <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobHireTemplate\register.aspx.designer.vb">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobHireTemplate\register.aspx.vb">
       <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JobHireTemplate\trabajo.aspx.designer.vb">
       <DependentUpon>trabajo.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobHireTemplate\trabajo.aspx.vb">
       <DependentUpon>trabajo.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo10.aspx.designer.vb">
+      <DependentUpon>trabajo10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo10.aspx.vb">
+      <DependentUpon>trabajo10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\Trabajo2.aspx.designer.vb">
+      <DependentUpon>Trabajo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\Trabajo2.aspx.vb">
+      <DependentUpon>Trabajo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo3.aspx.designer.vb">
+      <DependentUpon>trabajo3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo3.aspx.vb">
+      <DependentUpon>trabajo3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo4.aspx.designer.vb">
+      <DependentUpon>trabajo4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo4.aspx.vb">
+      <DependentUpon>trabajo4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo5.aspx.designer.vb">
+      <DependentUpon>trabajo5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo5.aspx.vb">
+      <DependentUpon>trabajo5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo6.aspx.designer.vb">
+      <DependentUpon>trabajo6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo6.aspx.vb">
+      <DependentUpon>trabajo6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo7.aspx.designer.vb">
+      <DependentUpon>trabajo7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo7.aspx.vb">
+      <DependentUpon>trabajo7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo8.aspx.designer.vb">
+      <DependentUpon>trabajo8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo8.aspx.vb">
+      <DependentUpon>trabajo8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo9.aspx.designer.vb">
+      <DependentUpon>trabajo9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobHireTemplate\trabajo9.aspx.vb">
+      <DependentUpon>trabajo9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

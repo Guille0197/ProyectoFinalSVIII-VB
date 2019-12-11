@@ -184,54 +184,186 @@
 
 										<div class="col-xl-6">
 											<div class="submit-field">
-												<h5>Primer Nombre</h5>
-												<input type="text" class="with-border" value="">
+												<h5>Nombre(s) <span>*</span> </h5>
+												<input type="text" class="with-border" value="" placeholder="Nombre completo">
 											</div>
 										</div>
 
 										<div class="col-xl-6">
 											<div class="submit-field">
-												<h5>Apellido</h5>
-												<input type="text" class="with-border" value="">
+												<h5>Apellido(s) <span>*</span></h5>
+												<input type="text" class="with-border" value=""  placeholder="Apellido completo">
+											</div>
+										</div>
+
+                                        <div class="col-xl-6">
+                                            <div class="submit-field">
+				                                <h5>Género <span>*</span></h5>
+
+			                                <select class="selectpicker">
+                                                <option selected disabled>Seleccione un Género</option>
+				                                <option>Masculino</option>
+				                                <option>Femenino</option>
+				                                <option>Otro</option>
+			                                </select>
+                                           </div>
+		                                </div>
+
+                                        <div class="col-xl-6">
+                                            <div class="submit-field">
+				                                <h5>Estado Civil  <span>*</span></h5>
+
+			                                <select class="selectpicker">
+                                                <option selected disabled>Seleccione un estado civil</option>
+				                                <option>Soltero/a</option>
+				                                <option>Casado/a</option>
+				                                <option>Divorciado</option>
+                                                <option>Unión libre</option>
+                                                <option>Viudo/a</option>
+			                                </select>
+                                           </div>
+		                                </div>
+
+                                        <div class="col-xl-6">
+										<div class="submit-field">
+											<h5>Nacionalidad <span>*</span></h5>
+											<select class="selectpicker with-border" data-size="7" title="Select Job Type" data-live-search="true">
+												<option value="AR">Argentina</option>
+												<option value="AM">Armenia</option>
+												<option value="AW">Aruba</option>
+												<option value="AU">Australia</option>
+												<option value="AT">Austria</option>
+												<option value="AZ">Azerbaijan</option>
+												<option value="BS">Bahamas</option>
+												<option value="BH">Bahrain</option>
+												<option value="BD">Bangladesh</option>
+												<option value="BB">Barbados</option>
+												<option value="BY">Belarus</option>
+												<option value="BE">Belgium</option>
+												<option value="BZ">Belize</option>
+												<option value="BJ">Benin</option>
+												<option value="BM">Bermuda</option>
+												<option value="BT">Bhutan</option>
+												<option value="BG">Bulgaria</option>
+												<option value="BF">Burkina Faso</option>
+												<option value="BI">Burundi</option>
+												<option value="KH">Cambodia</option>
+												<option value="CM">Cameroon</option>
+												<option value="CA">Canada</option>
+												<option value="CV">Cape Verde</option>
+												<option value="KY">Cayman Islands</option>
+												<option value="CO">Colombia</option>
+												<option value="KM">Comoros</option>
+												<option value="CG">Congo</option>
+												<option value="CK">Cook Islands</option>
+												<option value="CR">Costa Rica</option>
+												<option value="CI">Côte d'Ivoire</option>
+												<option value="HR">Croatia</option>
+												<option value="CU">Cuba</option>
+												<option value="CW">Curaçao</option>
+												<option value="CY">Cyprus</option>
+												<option value="CZ">Czech Republic</option>
+												<option value="DK">Denmark</option>
+												<option value="DJ">Djibouti</option>
+												<option value="DM">Dominica</option>
+												<option value="DO">Dominican Republic</option>
+												<option value="EC">Ecuador</option>
+												<option value="EG">Egypt</option>
+												<option value="GP">Guadeloupe</option>
+												<option value="GU">Guam</option>
+												<option value="GT">Guatemala</option>
+												<option value="GG">Guernsey</option>
+												<option value="GN">Guinea</option>
+												<option value="GW">Guinea-Bissau</option>
+												<option value="GY">Guyana</option>
+												<option value="HT">Haiti</option>
+												<option value="HN">Honduras</option>
+												<option value="HK">Hong Kong</option>
+												<option value="HU">Hungary</option>
+												<option value="IS">Iceland</option>
+												<option value="IN">India</option>
+												<option value="ID">Indonesia</option>
+												<option value="NO">Norway</option>
+												<option value="OM">Oman</option>
+												<option value="PK">Pakistan</option>
+												<option value="PW">Palau</option>
+												<option value="PA" selected>Panama</option>
+												<option value="PG">Papua New Guinea</option>
+												<option value="PY">Paraguay</option>
+												<option value="PE">Peru</option>
+												<option value="PH">Philippines</option>
+												<option value="PN">Pitcairn</option>
+												<option value="PL">Poland</option>
+												<option value="PT">Portugal</option>
+												<option value="PR">Puerto Rico</option>
+												<option value="QA">Qatar</option>
+												<option value="RE">Réunion</option>
+												<option value="RO">Romania</option>
+												<option value="RU">Russian Federation</option>
+												<option value="RW">Rwanda</option>
+												<option value="SZ">Swaziland</option>
+												<option value="SE">Sweden</option>
+												<option value="CH">Switzerland</option>
+												<option value="TR">Turkey</option>
+												<option value="TM">Turkmenistan</option>
+												<option value="TV">Tuvalu</option>
+												<option value="UG">Uganda</option>
+												<option value="UA">Ukraine</option>
+												<option value="GB">United Kingdom</option>
+												<option value="US">United States</option>
+												<option value="UY">Uruguay</option>
+												<option value="UZ">Uzbekistan</option>
+                                                <option value="VE">Venezuela</option>
+												<option value="YE">Yemen</option>
+												<option value="ZM">Zambia</option>
+												<option value="ZW">Zimbabwe</option>
+											</select>
+										</div>
+									</div>
+
+                                        <div class="col-xl-6">
+                                            <div class="submit-field">
+				                                <h5>Tipo de documento <span>*</span></h5>
+			                                <select class="selectpicker">
+                                                <option selected disabled>Seleccione un tipo</option>
+				                                <option>Cédula</option>
+				                                <option>Pasaporte</option>
+			                                </select>
+                                           </div>
+		                                </div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Número de documento <span>*</span></h5>
+												<input type="text" class="with-border" value=""  placeholder="x-xxx-xxxx">
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="submit-field">
+												<h5>Correo <span>*</span></h5>
+												<input type="text" class="with-border" value="" placeholder="correo@ejemplo.com">
 											</div>
 										</div>
 
                                         <div class="col-xl-6">
 											<div class="submit-field">
-												<h5>Primer Nombre</h5>
-												<input type="text" class="with-border" value="">
+												<h5>Teléfono <span>*</span></h5>
+												<input type="text" class="with-border" value="" placeholder="(+507) 6666-6666">
 											</div>
 										</div>
 
-										<div class="col-xl-6">
+                                        <div class="col-xl-6">
 											<div class="submit-field">
-												<h5>Apellido</h5>
-												<input type="text" class="with-border" value="">
+												<h5>Fecha de nacimiento <span>*</span></h5>
+												<input type="date" class="with-border" value="">
 											</div>
 										</div>
 
-										<div class="col-xl-6">
-											<!-- Account Type -->
+                                        <div class="col-xl-6">
 											<div class="submit-field">
-												<h5>Account Type</h5>
-												<div class="account-type">
-													<div>
-														<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-														<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
-													</div>
-
-													<div>
-														<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-														<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-xl-6">
-											<div class="submit-field">
-												<h5>Correo</h5>
-												<input type="text" class="with-border" value="tom@example.com">
+												<h5>Dirección <span>*</span></h5>
+												<input type="text" class="with-border" value="" placeholder="Calle 123 ST.">
 											</div>
 										</div>
 
@@ -259,12 +391,22 @@
 									<div class="col-xl-4">
 										<div class="submit-field">
 											<div class="bidding-widget">
-												<!-- Headline -->
-												<span class="bidding-detail">Establezca su <strong>tarifa por hora mínima</strong></span>
 
-												<!-- Slider -->
-												<div class="bidding-value margin-bottom-10">$<span id="biddingVal"></span></div>
-												<input class="bidding-slider" type="text" value="" data-slider-handle="custom" data-slider-currency="$" data-slider-min="5" data-slider-max="100" data-slider-value="5" data-slider-step="1" data-slider-tooltip="hide" />
+                                                <%-- CheckBox --%>
+                                                <h5>Datos Adicionales</h5>
+                                                <div class="checkbox">
+				                                    <input type="checkbox" id="chekcbox1" >
+				                                    <label for="chekcbox1"><span class="checkbox-icon"></span> Poseo licencia de conducir</label>
+			                                    </div>
+
+                                                <br /> <br /> 
+
+                                                <div class="checkbox">
+				                                    <input type="checkbox" id="chekcbox2" >
+				                                    <label for="chekcbox1"><span class="checkbox-icon"></span>  Poseo algún tipo de discapacidad </label>
+			                                    </div>
+                                                <%-- CheckBox END--%>
+
 											</div>
 										</div>
 									</div>
@@ -298,14 +440,8 @@
 											<!-- Attachments -->
 											<div class="attachments-container margin-top-0 margin-bottom-0">
 												<div class="attachment-box ripple-effect">
-													<span>Cover Letter</span>
-													<i>PDF</i>
-													<button class="remove-attachment" data-tippy-placement="top" title="Remove"></button>
-												</div>
-												<div class="attachment-box ripple-effect">
-													<span>Contract</span>
-													<i>DOCX</i>
-													<button class="remove-attachment" data-tippy-placement="top" title="Remove"></button>
+													<span>CV</span>
+													<i>PDF - DOCX</i>
 												</div>
 											</div>
 											<div class="clearfix"></div>
@@ -313,7 +449,7 @@
 											<!-- Upload Button -->
 											<div class="uploadButton margin-top-0">
 												<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" multiple/>
-												<label class="uploadButton-button ripple-effect" for="upload">Subir archivos</label>
+												<label class="uploadButton-button ripple-effect" for="upload">Subir archivo</label>
 												<span class="uploadButton-file-name">Tamaño máximo de archivo: 10 MB</span>
 											</div>
 
@@ -419,6 +555,7 @@
 												<option value="US">United States</option>
 												<option value="UY">Uruguay</option>
 												<option value="UZ">Uzbekistan</option>
+                                                <option value="VE">Venezuela</option>
 												<option value="YE">Yemen</option>
 												<option value="ZM">Zambia</option>
 												<option value="ZW">Zimbabwe</option>

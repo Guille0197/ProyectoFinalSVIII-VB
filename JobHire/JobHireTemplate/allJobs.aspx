@@ -107,10 +107,10 @@
 
                 <!-- Location -->
                 <div class="sidebar-widget">
-                    <h3>Location</h3>
+                    <h3>Lugar de trabajo</h3>
                     <div class="input-with-icon">
                         <div id="autocomplete-container">
-                            <input id="autocomplete-input" type="text" placeholder="Location">
+                            <input id="autocomplete-input" type="text" placeholder="Lugar">
                         </div>
                         <i class="icon-material-outline-location-on"></i>
                     </div>
@@ -118,10 +118,10 @@
 
                 <!-- Keywords -->
                 <div class="sidebar-widget">
-                    <h3>Keywords</h3>
+                    <h3>Palabras claves</h3>
                     <div class="keywords-container">
                         <div class="keyword-input-container">
-                            <input type="text" class="keyword-input" placeholder="e.g. job title" />
+                            <input type="text" class="keyword-input" placeholder="secretara. plomero. etc." />
                             <button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
                         </div>
                         <div class="keywords-list"><!-- keywords go here --></div>
@@ -129,115 +129,36 @@
                     </div>
                 </div>
 
-                <!-- Category -->
-                <div class="sidebar-widget">
-                    <h3>Category</h3>
-                    <select class="selectpicker" multiple data-selected-text-format="count" data-size="7" title="All Categories">
-                        <option>Accounting and Finance</option>
-                        <option>Clerical & Data Entry</option>
-                        <option>Counseling</option>
-                        <option>Court Administration</option>
-                        <option>Human Resources</option>
-                        <option>Investigative</option>
-                        <option>IT and Computers</option>
-                        <option>Law Enforcement</option>
-                        <option>Management</option>
-                        <option>Miscellaneous</option>
-                        <option>Public Relations</option>
-                    </select>
-                </div>
+               
 
-                <!-- Job Types -->
-                <div class="sidebar-widget">
-                    <h3>Job Type</h3>
-
-                    <div class="switches-list">
-                        <div class="switch-container">
-                            <label class="switch"><input type="checkbox"><span class="switch-button"></span> Freelance</label>
-                        </div>
-
-                        <div class="switch-container">
-                            <label class="switch"><input type="checkbox"><span class="switch-button"></span> Full Time</label>
-                        </div>
-
-                        <div class="switch-container">
-                            <label class="switch"><input type="checkbox"><span class="switch-button"></span> Part Time</label>
-                        </div>
-
-                        <div class="switch-container">
-                            <label class="switch"><input type="checkbox"><span class="switch-button"></span> Internship</label>
-                        </div>
-                        <div class="switch-container">
-                            <label class="switch"><input type="checkbox"><span class="switch-button"></span> Temporary</label>
-                        </div>
-                    </div>
-
-                </div>
-
+        
+              
                 <!-- Salary -->
                 <div class="sidebar-widget">
-                    <h3>Salary</h3>
+                    <h3>Salario al que aspira</h3>
                     <div class="margin-top-55"></div>
 
                     <!-- Range Slider -->
                     <input class="range-slider" type="text" value="" data-slider-currency="$" data-slider-min="1500" data-slider-max="15000" data-slider-step="100" data-slider-value="[1500,15000]" />
                 </div>
 
-                <!-- Tags -->
-                <div class="sidebar-widget">
-                    <h3>Tags</h3>
-
-                    <div class="tags-container">
-                        <div class="tag">
-                            <input type="checkbox" id="tag1" />
-                            <label for="tag1">front-end dev</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag2" />
-                            <label for="tag2">angular</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag3" />
-                            <label for="tag3">react</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag4" />
-                            <label for="tag4">vue js</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag5" />
-                            <label for="tag5">web apps</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag6" />
-                            <label for="tag6">design</label>
-                        </div>
-                        <div class="tag">
-                            <input type="checkbox" id="tag7" />
-                            <label for="tag7">wordpress</label>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
+          
             </div>
         </div>
         <div class="col-xl-9 col-lg-8 content-left-offset">
 
-            <h3 class="page-title">Search Results</h3>
+            <h3 class="page-title">Resultados de la busqueda</h3>
 
             <div class="notify-box margin-top-15">
-                <div class="switch-container">
-                    <label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Turn on email alerts for this search</span></label>
-                </div>
+              
 
                 <div class="sort-by">
-                    <span>Sort by:</span>
+                    <span>Ordenar por:</span>
                     <select class="selectpicker hide-tick">
-                        <option>Relevance</option>
-                        <option>Newest</option>
-                        <option>Oldest</option>
-                        <option>Random</option>
+                        <option>Aleatorio</option>
+                        <option>Recientes</option>
+                        <option>Antiguos</option>
+                     
                     </select>
                 </div>
             </div>
@@ -245,28 +166,29 @@
             <div class="listings-container compact-list-layout margin-top-35">
 
                 <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
+                <a href="trabajo.aspx" class="job-listing">
 
                     <!-- Job Listing Details -->
                     <div class="job-listing-details">
 
                         <!-- Logo -->
                         <div class="job-listing-company-logo">
-                            <img src="images/company-logo-01.png" alt="">
+                           <img src="images/company-logo-01.png" alt="">
                         </div>
 
                         <!-- Details -->
                         <div class="job-listing-description">
-                            <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
+                          <h3 class="job-listing-title">Analista Desarrollador Web</h3>
 
                             <!-- Job Listing Footer -->
                             <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Hexagon <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
+                              <ul>
+                                                <li><i class="icon-material-outline-business"></i> Exceltec <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
+                                                <li><i class="icon-material-outline-location-on"></i> Ciudad De Panama, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Tiempo Completo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 1 día</li>
+                                                <!--https://www.konzerta.com/empleos/analista-desarrollador-web.-exceltec-1113726479.html?indiceAviso=0-->
+                                            </ul>
                             </div>
                         </div>
 
@@ -277,28 +199,29 @@
 
 
                 <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
+                <a href="trabajo2.aspx" class="job-listing">
 
                     <!-- Job Listing Details -->
                     <div class="job-listing-details">
 
                         <!-- Logo -->
                         <div class="job-listing-company-logo">
-                            <img src="images/company-logo-05.png" alt="">
+                          <img src="images/company-logo-05.png" alt="">
                         </div>
 
                         <!-- Details -->
                         <div class="job-listing-description">
-                            <h3 class="job-listing-title">Competition Law Officer</h3>
+                          <h3 class="job-listing-title">Asesor de ventas para chiriquí</h3>
 
                             <!-- Job Listing Footer -->
                             <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Laxo</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
+                                 <ul>
+                                                <li><i class="icon-material-outline-business"></i> GRUPO DIT</li>
+                                                <li><i class="icon-material-outline-location-on"></i>David, Chiriquí</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Tiempo Completo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 2 día</li>
+                                                <!--https://www.konzerta.com/empleos/asesor-de-ventas-para-chiriqui-grupo-dit-1113721412.html?indiceAviso=6 -->
+                                            </ul>
                             </div>
                         </div>
 
@@ -307,122 +230,28 @@
                     </div>
                 </a>
                 <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
+                <a href="trabajo3.aspx" class="job-listing">
 
                     <!-- Job Listing Details -->
                     <div class="job-listing-details">
 
                         <!-- Logo -->
                         <div class="job-listing-company-logo">
-                            <img src="images/company-logo-02.png" alt="">
+                        <img src="images/company-logo-02.png" alt="">
                         </div>
 
                         <!-- Details -->
                         <div class="job-listing-description">
-                            <h3 class="job-listing-title">Barista and Cashier</h3>
+                        <h3 class="job-listing-title">Secretaria Recepcionista</h3>
 
                             <!-- Job Listing Footer -->
                             <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Coffee</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Bookmark -->
-                        <span class="bookmark-icon"></span>
-                    </div>
-                </a>
-
-
-                <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
-
-                    <!-- Job Listing Details -->
-                    <div class="job-listing-details">
-
-                        <!-- Logo -->
-                        <div class="job-listing-company-logo">
-                            <img src="images/company-logo-03.png" alt="">
-                        </div>
-
-                        <!-- Details -->
-                        <div class="job-listing-description">
-                            <h3 class="job-listing-title">Restaurant General Manager</h3>
-
-                            <!-- Job Listing Footer -->
-                            <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> King <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Bookmark -->
-                        <span class="bookmark-icon"></span>
-                    </div>
-                </a>
-
-                <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
-
-                    <!-- Job Listing Details -->
-                    <div class="job-listing-details">
-
-                        <!-- Logo -->
-                        <div class="job-listing-company-logo">
-                            <img src="images/company-logo-05.png" alt="">
-                        </div>
-
-                        <!-- Details -->
-                        <div class="job-listing-description">
-                            <h3 class="job-listing-title">International Marketing Coordinator</h3>
-
-                            <!-- Job Listing Footer -->
-                            <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Skyist</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Bookmark -->
-                        <span class="bookmark-icon"></span>
-                    </div>
-                </a>
-
-                <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
-
-                    <!-- Job Listing Details -->
-                    <div class="job-listing-details">
-
-                        <!-- Logo -->
-                        <div class="job-listing-company-logo">
-                            <img src="images/company-logo-04.png" alt="">
-                        </div>
-
-                        <!-- Details -->
-                        <div class="job-listing-description">
-                            <h3 class="job-listing-title">Administrative Assistant</h3>
-
-                            <!-- Job Listing Footer -->
-                            <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Mates</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
+                              <ul>
+                                                <li><i class="icon-material-outline-business"></i> Empresa Multinacional</li>
+                                                <li><i class="icon-material-outline-location-on"></i> Chitré, Herrera</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Tiempo Completo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 3 día</li>
+                                            </ul>
                             </div>
                         </div>
 
@@ -433,28 +262,32 @@
 
 
                 <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
+               
+                <!-- Job Listing -->
+                <a href="trabajo4.aspx" class="job-listing">
 
                     <!-- Job Listing Details -->
                     <div class="job-listing-details">
 
                         <!-- Logo -->
                         <div class="job-listing-company-logo">
-                            <img src="images/company-logo-05.png" alt="">
+                             <img src="images/company-logo-03.png" alt="">
                         </div>
 
                         <!-- Details -->
                         <div class="job-listing-description">
-                            <h3 class="job-listing-title">Construction Labourers</h3>
+                           <h3 class="job-listing-title">Conductor / Chofer</h3>
 
                             <!-- Job Listing Footer -->
                             <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Podous</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
+                                      <ul>
+                                                <li><i class="icon-material-outline-business"></i> MiBus <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
+                                                <li><i class="icon-material-outline-location-on"></i> cuidad De Panama, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Medio Tiempo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 3 día</li>
+
+                                                <!--https://www.konzerta.com/empleos/conductor-de-almacen-mibus-1113674637.html?indiceAviso=8-->
+                                            </ul>
                             </div>
                         </div>
 
@@ -464,28 +297,29 @@
                 </a>
 
                 <!-- Job Listing -->
-                <a href="single-job-page.html" class="job-listing">
+                <a href="trabajo5.aspx" class="job-listing">
 
                     <!-- Job Listing Details -->
                     <div class="job-listing-details">
 
                         <!-- Logo -->
                         <div class="job-listing-company-logo">
-                            <img src="images/company-logo-06.png" alt="">
+                             <img src="images/company-logo-04.png" alt="">
                         </div>
 
                         <!-- Details -->
                         <div class="job-listing-description">
-                            <h3 class="job-listing-title">Human Resources Consultant</h3>
+                          <h3 class="job-listing-title">Gerente de Sucursal</h3>
 
                             <!-- Job Listing Footer -->
                             <div class="job-listing-footer">
-                                <ul>
-                                    <li><i class="icon-material-outline-business"></i> Trideo</li>
-                                    <li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-                                    <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                </ul>
+                                 <ul>
+                                                <li><i class="icon-material-outline-business"></i> Scotiabank Panamá</li>
+                                                <li><i class="icon-material-outline-location-on"></i> Los Santos, Los Santos</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Tiempo Completo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 4 día</li>
+                                                <!--https://www.konzerta.com/empleos/gerente-de-sucursal-scotiabank-panama-1113725921.html?indiceAviso=0-->
+                                            </ul>
                             </div>
                         </div>
 
@@ -493,6 +327,173 @@
                         <span class="bookmark-icon"></span>
                     </div>
                 </a>
+
+
+                <!-- Job Listing -->
+                <a href="trabajo6.aspx" class="job-listing">
+
+                    <!-- Job Listing Details -->
+                    <div class="job-listing-details">
+
+                        <!-- Logo -->
+                        <div class="job-listing-company-logo">
+                             <img src="images/company-logo-06.png" alt="">
+                        </div>
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                                   <h3 class="job-listing-title">Técnico en Redes</h3>
+
+                            <!-- Job Listing Footer -->
+                            <div class="job-listing-footer">
+                                <ul>
+                                                <li><i class="icon-material-outline-business"></i> Cable Onda</li>
+                                                <li><i class="icon-material-outline-location-on"></i> Chitré, Herrera</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Medio Tiempo</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 5 día</li>
+                                            </ul>
+                            </div>
+                        </div>
+
+                        <!-- Bookmark -->
+                        <span class="bookmark-icon"></span>
+                    </div>
+                </a>
+
+              
+
+                  <!-- Job Listing -->
+                <a href="trabajo7.aspx" class="job-listing">
+
+                    <!-- Job Listing Details -->
+                    <div class="job-listing-details">
+
+                        <!-- Logo -->
+                        <div class="job-listing-company-logo">
+                             <img src="images/company-logo-07.png" alt="">
+                        </div>
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                                   <h3 class="job-listing-title">Conduce con Uber y obtén ganancias rápidas </h3>
+
+                            <!-- Job Listing Footer -->
+                            <div class="job-listing-footer">
+                                <ul>
+                                                <li><i class="icon-material-outline-business"></i> UBER</li>
+                                                <li><i class="icon-material-outline-location-on"></i>Panamá, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> Por Horas</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 5 día</li>
+                                            </ul>
+                                       <!-- https://www.konzerta.com/empleos/conduce-con-uber-y-obten-ganancias-rapidas-uber-1113728180.html?indiceAviso=0.0 -->
+                            </div>
+                        </div>
+
+                        <!-- Bookmark -->
+                        <span class="bookmark-icon"></span>
+                    </div>
+                </a>
+
+                 <!-- Job Listing -->
+                <a href="trabajo8.aspx" class="job-listing">
+
+                    <!-- Job Listing Details -->
+                    <div class="job-listing-details">
+
+                        <!-- Logo -->
+                        <div class="job-listing-company-logo">
+                             <img src="images/company-logo-08.jpeg" alt="">
+                        </div>
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                                   <h3 class="job-listing-title">TEC. ELECTROMECÁNICO</h3>
+
+                            <!-- Job Listing Footer -->
+                            <div class="job-listing-footer">
+                                <ul>
+                                                <li><i class="icon-material-outline-business"></i> GRUPO MELO</li>
+                                                <li><i class="icon-material-outline-location-on"></i>Juan Díaz, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> 8 horas</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 10 día</li>
+                                            </ul>
+                                <%--https://www.konzerta.com/empleos/tec.-electromecanico-grupo-melo-1113609269.html?indiceAviso=0--%>
+                            </div>
+                     
+                        </div>
+
+                        <!-- Bookmark -->
+                        <span class="bookmark-icon"></span>
+                    </div>
+                </a>
+
+                 <!-- Job Listing -->
+                <a href="trabajo9.aspx" class="job-listing">
+
+                    <!-- Job Listing Details -->
+                    <div class="job-listing-details">
+
+                        <!-- Logo -->
+                        <div class="job-listing-company-logo">
+                             <img src="images/company-logo-09.jpeg" alt="">
+                        </div>
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                                   <h3 class="job-listing-title">AUXILIAR DE FARMACIA</h3>
+
+                            <!-- Job Listing Footer -->
+                            <div class="job-listing-footer">
+                                <ul>
+                                                <li><i class="icon-material-outline-business"></i> FARMACIA EL JABILLO</li>
+                                                <li><i class="icon-material-outline-location-on"></i>Ciudad De Panama, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> 7 horas</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 12 día</li>
+                                            </ul>
+                            </div>
+                     
+                        </div>
+
+                        <!-- Bookmark -->
+                        <span class="bookmark-icon"></span>
+                    </div>
+                </a>
+
+                   <!-- Job Listing -->
+                <a href="trabajo10.aspx" class="job-listing">
+
+                    <!-- Job Listing Details -->
+                    <div class="job-listing-details">
+
+                        <!-- Logo -->
+                        <div class="job-listing-company-logo">
+                             <img src="images/company-logo-010.jpeg" alt="">
+                        </div>
+
+                        <!-- Details -->
+                        <div class="job-listing-description">
+                                   <h3 class="job-listing-title">SUPERVISOR - COCHEZ CORONADO</h3>
+
+                            <!-- Job Listing Footer -->
+                            <div class="job-listing-footer">
+                                <ul>
+                                                <li><i class="icon-material-outline-business"></i> COCHEZ Y CÍA</li>
+                                                <li><i class="icon-material-outline-location-on"></i>Coronado, Panamá</li>
+                                                <li><i class="icon-material-outline-business-center"></i> 7 horas</li>
+                                                <li><i class="icon-material-outline-access-time"></i> Hace 18 día</li>
+                                            </ul>
+                            </div>
+                     
+                        </div>
+
+                        <!-- Bookmark -->
+                        <span class="bookmark-icon"></span>
+                    </div>
+                </a>
+
+
+
+               
             </div>
 
 
@@ -503,14 +504,7 @@
                     <!-- Pagination -->
                     <div class="pagination-container margin-top-60 margin-bottom-60">
                         <nav class="pagination">
-                            <ul>
-                                <li class="pagination-arrow"><a href="#"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#" class="current-page">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li class="pagination-arrow"><a href="#"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
-                            </ul>
+                           
                         </nav>
                     </div>
                 </div>
